@@ -2,6 +2,7 @@ import Quick
 import Nimble
 import Result
 import Guanaco
+import Foundation
 
 class HaveFailedSpec: QuickSpec {
   override func spec() {

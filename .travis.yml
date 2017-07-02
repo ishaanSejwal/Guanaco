@@ -1,16 +1,40 @@
 language: objective-c
+osx_image: xcode8.3
 
+xcode_workspace: Guanaco.xcworkspace
 matrix:
   include:
-    - osx_image: xcode8.1
-    - osx_image: xcode8.2
-
-# Create a new simulator device and reference it by id to avoid the following errors: 
-# "The requested device could not be found because no available devices matched the request."
-# "The requested device could not be found because multiple devices matched the request."
-before_script:
-  - "destination_id=$(xcrun simctl create Travis com.apple.CoreSimulator.SimDeviceType.iPhone-7 com.apple.CoreSimulator.SimRuntime.iOS-10-1)"
+    # iOS
+    - xcode_scheme: Guanaco-iOS
+      xcode_sdk: iphonesimulator
+      before_script: 
+        # Create a new simulator device and reference it by id to avoid the following errors: 
+        # "The requested device could not be found because no available devices matched the request."
+        # "The requested device could not be found because multiple devices matched the request."
+        - destination_id=$(xcrun simctl create Travis com.apple.CoreSimulator.SimDeviceType.iPhone-7 com.apple.CoreSimulator.SimRuntime.iOS-10-1)
+    # macOS
+    - xcode_scheme: Guanaco-OSX
+    # macOS SPM
+    - script:
+        - swift --version
+        - swift build
+        - SWIFTPM_TEST=YES swift test
+      git:
+        submodules: false
+      env:
+        - JOB=SWIFTPM_DARWIN
+    # Linux SPM
+    - os: linux
+      language: generic
+      sudo: required
+      dist: trusty
+      script:
+        - swift --version
+        - swift build
+        - SWIFTPM_TEST=YES swift test
+      git:
+        submodules: false
+      env: JOB=SWIFTPM_LINUX
 
 script:
-  - "xcodebuild -workspace Guanaco.xcworkspace -scheme Guanaco-iOS -sdk iphonesimulator -destination \"id=$destination_id\" test"
-  - "xcodebuild -workspace Guanaco.xcworkspace -scheme Guanaco-OSX test"
+  - xcodebuild $XCODE_ACTION -workspace "$TRAVIS_XCODE_WORKSPACE" -scheme "$TRAVIS_XCODE_SCHEME" ${XCODE_SDK+ echo "-sdk ${XCODE_SDK}"} ${destination_id+ echo "-destination ${destination_id}"} | xcpretty

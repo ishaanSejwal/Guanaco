@@ -214,7 +214,8 @@
 				DAE3CA251A96FC5200CAD15A /* BeAnError.swift */,
 				DACBD3E91A94404800BA07BE /* Supporting Files */,
 			);
-			path = Guanaco;
+			name = Guanaco;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		DACBD3E91A94404800BA07BE /* Supporting Files */ = {
@@ -233,7 +234,8 @@
 				DA5914361A944C4800AED74C /* HaveFailedSpec.swift */,
 				DACBD3F61A94404800BA07BE /* Supporting Files */,
 			);
-			path = GuanacoTests;
+			name = GuanacoTests;
+			path = Tests/GuanacoTests;
 			sourceTree = "<group>";
 		};
 		DACBD3F61A94404800BA07BE /* Supporting Files */ = {
@@ -482,7 +484,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Guanaco/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.modocache.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Guanaco;
 			};
@@ -497,7 +499,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Guanaco/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.modocache.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Guanaco;
 			};
@@ -507,7 +509,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C92C096B1DFFB92C00233A4A /* Mac-Application.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = GuanacoTests/Info.plist;
+				INFOPLIST_FILE = Tests/GuanacoTests/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.modocache.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = GuanacoTests;
 			};
@@ -517,7 +519,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C92C096B1DFFB92C00233A4A /* Mac-Application.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = GuanacoTests/Info.plist;
+				INFOPLIST_FILE = Tests/GuanacoTests/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.modocache.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = GuanacoTests;
 			};
@@ -556,7 +558,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Guanaco/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.modocache.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Guanaco;
 			};
@@ -571,7 +573,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Guanaco/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.modocache.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Guanaco;
 			};
@@ -581,7 +583,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C92C09661DFFB92C00233A4A /* iOS-Application.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = GuanacoTests/Info.plist;
+				INFOPLIST_FILE = Tests/GuanacoTests/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.modocache.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = GuanacoTests;
 			};
@@ -591,7 +593,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C92C09661DFFB92C00233A4A /* iOS-Application.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = GuanacoTests/Info.plist;
+				INFOPLIST_FILE = Tests/GuanacoTests/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.modocache.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = GuanacoTests;
 			};
