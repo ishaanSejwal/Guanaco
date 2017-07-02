@@ -2,6 +2,7 @@ language: objective-c
 osx_image: xcode8.3
 
 xcode_workspace: Guanaco.xcworkspace
+
 matrix:
   include:
     # iOS
@@ -12,8 +13,10 @@ matrix:
         # "The requested device could not be found because no available devices matched the request."
         # "The requested device could not be found because multiple devices matched the request."
         - destination_id=$(xcrun simctl create Travis com.apple.CoreSimulator.SimDeviceType.iPhone-7 com.apple.CoreSimulator.SimRuntime.iOS-10-1)
+      env: JOB=IOS
     # macOS
     - xcode_scheme: Guanaco-OSX
+      env: JOB=MACOS
     # macOS SPM
     - script:
         - swift --version
@@ -21,13 +24,14 @@ matrix:
         - SWIFTPM_TEST=YES swift test
       git:
         submodules: false
-      env:
-        - JOB=SWIFTPM_DARWIN
+      env: JOB=SWIFTPM_DARWIN
     # Linux SPM
     - os: linux
       language: generic
       sudo: required
       dist: trusty
+      before_install:
+        - eval "$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)"
       script:
         - swift --version
         - swift build
@@ -37,4 +41,4 @@ matrix:
       env: JOB=SWIFTPM_LINUX
 
 script:
-  - xcodebuild $XCODE_ACTION -workspace "$TRAVIS_XCODE_WORKSPACE" -scheme "$TRAVIS_XCODE_SCHEME" ${XCODE_SDK+ echo "-sdk ${XCODE_SDK}"} ${destination_id+ echo "-destination ${destination_id}"} | xcpretty
+  - xcodebuild $XCODE_ACTION -workspace "$TRAVIS_XCODE_WORKSPACE" -scheme "$TRAVIS_XCODE_SCHEME" ${XCODE_SDK+ -sdk $XCODE_SDK} ${destination_id+ -destination \"id=$destination_id\"}

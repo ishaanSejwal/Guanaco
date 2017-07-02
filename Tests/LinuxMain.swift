@@ -1,6 +1,9 @@
 import XCTest
+import Quick
+
 @testable import GuanacoTests
 
-XCTMain([
-    testCase(GuanacoTests.allTests),
+Quick.QCKMain([
+    HaveFailedSpec.self,
+    HaveSucceededSpec.self,
 ])
