@@ -5,19 +5,13 @@
       "package": "Nimble",
       "reason": null,
       "repositoryURL": "https://github.com/Quick/Nimble.git",
-      "version": "5.1.1"
-    },
-    {
-      "package": "Quick",
-      "reason": null,
-      "repositoryURL": "https://github.com/Quick/Quick.git",
-      "version": "1.0.0"
+      "version": "7.0.1"
     },
     {
       "package": "Result",
       "reason": null,
       "repositoryURL": "https://github.com/antitypical/Result.git",
-      "version": "3.1.0"
+      "version": "3.2.3"
     }
   ],
   "version": 1

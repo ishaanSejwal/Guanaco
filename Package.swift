@@ -11,13 +11,12 @@ let package = Package(
     name: "Guanaco",
     dependencies: {
         var deps: [Package.Dependency] = [
-            .Package(url: "https://github.com/antitypical/Result.git", majorVersion: 3, minor: 1),
-            .Package(url: "https://github.com/Quick/Nimble.git", majorVersion: 5, minor: 1),
-            .Package(url: "https://github.com/Quick/Quick.git", majorVersion: 1, minor: 0),
+            .Package(url: "https://github.com/antitypical/Result.git", Version(3,2,3)),
+            .Package(url: "https://github.com/Quick/Nimble.git", Version(7,0,1)),
         ]
         if isSwiftPackagerManagerTest {
             deps += [
-                .Package(url: "https://github.com/Quick/Quick.git", majorVersion: 1, minor: 0)
+                .Package(url: "https://github.com/Quick/Quick.git", Version(1,1,0))
             ]
         }
         return deps
