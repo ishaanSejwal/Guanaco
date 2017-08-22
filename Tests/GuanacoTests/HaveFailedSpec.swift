@@ -52,7 +52,7 @@ class HaveFailedSpec: QuickSpec {
 //                localizedDescription: match("techcrunch")
 //              )))
 //            }
-//            expect(message).to(match("expected for failure value to match"))
+//            expect(message).to(match("expected to failed with value"))
 //          }
 //        }
       }
@@ -67,7 +67,6 @@ class HaveFailedSpec: QuickSpec {
               userInfo: [NSLocalizedDescriptionKey: "uber for philosophers"]
               )
           }
-          
           expect(expression:actual).to(haveFailed())
         }
       }

@@ -33,15 +33,13 @@ public func haveSucceeded<T, U>() -> Predicate<Result<T, U>> {
     return Predicate.define("have succeeded", matcher: { (actualResultExpression, msg) -> PredicateResult in
         guard let actualResult = try actualResultExpression.evaluate() else {
             return PredicateResult(status: .fail, message: msg) }
-        let predicateResultClosure = ({ matches in
-            PredicateResult(status: PredicateStatus(bool: matches), message: msg) })
         
         return actualResult.analysis(
             ifSuccess: { _ in
-                return predicateResultClosure(true)
+                return PredicateResult(status: .matches, message: msg)
         },
             ifFailure: { _ in
-                return  predicateResultClosure(false)
+                return PredicateResult(status: .doesNotMatch, message: msg)
         }
         )
     })
@@ -116,7 +114,7 @@ public func haveSucceeded<T, U>(_ predicate: Predicate<T>) -> Predicate<Result<T
                 return PredicateResult(status: .fail, message: msg)
             }
         }, ifFailure: { _ in
-            return PredicateResult(status: PredicateStatus(bool: false), message: msg)
+            return PredicateResult(status: .doesNotMatch, message: msg)
         })
     })
 }
