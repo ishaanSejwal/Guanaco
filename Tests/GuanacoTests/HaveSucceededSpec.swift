@@ -45,7 +45,7 @@ class HaveSucceededSpec: QuickSpec {
             let message = assertionMessage {
               expect(actual).to(haveSucceeded(equal("seamless for dread")))
             }
-            expect(message).to(equal("expected for successful value to equal <seamless for dread>, got <.success(tumblr for clowns)>"))
+            expect(message).to(equal("expected to have succeeded with value equal <seamless for dread>, got <.success(tumblr for clowns)>"))
           }
 
           it("succeeds if the result's value matches") {
@@ -53,6 +53,37 @@ class HaveSucceededSpec: QuickSpec {
           }
         }
       }
+        context("when the actual value is nil") {
+            beforeEach {
+                actual = nil
+            }
+            it("fails with a beNil() suggestion") {
+                let message = assertionMessage {
+                    expect(actual).to(haveSucceeded())
+                }
+                expect(message).to(match("expected to have succeeded, got"))
+                expect(message).to(match("beNil()"))
+            }
+            context("and a matcher is specified") {
+                it("fails even if matched value is also nil") {
+                    let message = assertionMessage {
+                        expect(actual).to(haveSucceeded(equal(nil)))
+                    }
+                    expect(message).to(match("expected to have succeeded, got"))
+                    expect(message).to(match("beNil()"))
+                }
+                it("fails if matched value is non-nil") {
+                    let message = assertionMessage {
+                        expect(actual).to(haveSucceeded(equal("so done with clowns")))
+                    }
+                    expect(message).to(match("expected to have succeeded, got"))
+                    expect(message).to(match("beNil()"))
+                }
+                it("only passes a beNil() matcher") {
+                    expect(actual).to(beNil())
+                }
+            }
+        }
     }
   }
 }

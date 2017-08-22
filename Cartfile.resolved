@@ -1,4 +1,4 @@
-github "Quick/Nimble" "v7.0.1"
+git "file:///Users/ishaansejwal/Developer/checkouts/Nimble" "f6ae92573aeccc5786f6dfd290149feafed67fb9"
 github "Quick/Quick" "v1.1.0"
 github "antitypical/Result" "3.2.3"
 github "jspahrsummers/xcconfigs" "0.10"

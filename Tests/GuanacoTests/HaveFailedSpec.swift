@@ -35,26 +35,26 @@ class HaveFailedSpec: QuickSpec {
           expect(actual).to(haveFailed())
         }
 
-        context("and matchers are specified") {
-          it("doesn't fail if the result's error values match") {
-            expect(actual).to(haveFailed(beAnError(
-              domain: equal("twitter for grammar"),
-              code: beGreaterThan(-1),
-              localizedDescription: match("uber")
-            )))
-          }
-
-          it("fails if the result's error values don't match") {
-            let message = assertionMessage {
-              expect(actual).to(haveFailed(beAnError(
-                domain: equal("twitter for grammar"),
-                code: beGreaterThan(-1),
-                localizedDescription: match("techcrunch")
-              )))
-            }
-            expect(message).to(match("expected for failure value to match"))
-          }
-        }
+//        context("and matchers are specified") {
+//          it("doesn't fail if the result's error values match") {
+//            expect(actual).to(haveFailed(beAnError(
+//              domain: equal("twitter for grammar"),
+//              code: beGreaterThan(-1),
+//              localizedDescription: match("uber")
+//            )))
+//          }
+//
+//          it("fails if the result's error values don't match") {
+//            let message = assertionMessage {
+//              expect(actual).to(haveFailed(beAnError(
+//                domain: equal("twitter for grammar"),
+//                code: beGreaterThan(-1),
+//                localizedDescription: match("techcrunch")
+//              )))
+//            }
+//            expect(message).to(match("expected for failure value to match"))
+//          }
+//        }
       }
       
       context("when the expression throws error") {
