@@ -56,7 +56,7 @@ class HaveFailedSpec: QuickSpec {
 //          }
 //        }
       }
-      
+        
       context("when the expression throws error") {
         it("doesn't fail") {
           let actual: () throws -> Result<Any, NSError> = {

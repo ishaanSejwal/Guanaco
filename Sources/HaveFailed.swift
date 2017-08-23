@@ -112,7 +112,7 @@ public func haveFailed<T, U>(_ predicate: Predicate<U>) -> Predicate<Result<T,U>
             do {
                 let actualExpression = Expression(expression: {( error )}, location: actualResultExpression.location)
                 let result = try predicate.satisfies(actualExpression)
-                if !result.toBoolean(expectation: .toMatch) {
+                if !result.toBoolean(expectation: .toNotMatch) {
                     return PredicateResult(status: result.status, message: .expectedActualValueTo("have failed with value \(result.message.expectedMessage)"))
                 }
                 return result
