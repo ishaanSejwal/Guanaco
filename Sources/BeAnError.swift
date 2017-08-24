@@ -23,6 +23,45 @@ public func beAnError(domain: NonNilMatcherFunc<String>? = nil, code: NonNilMatc
   )
 }
 
+public func beAnError(domain: Predicate<String>? = nil, code: Predicate<Int>? = nil, localizedDescription: Predicate<String>? = nil) -> Predicate<NSError> {
+    return Predicate.define(matcher: { actualNSErrorExpression in
+        var message = ExpectationMessage.expectedTo("be an error")
+        if domain == nil && code == nil && localizedDescription == nil {
+            return PredicateResult(status: .matches, message: message.appended(message: ", got <nil>"))
+        }
+        guard let actualNSError = try actualNSErrorExpression.evaluate() else {
+            return PredicateResult(status: .fail, message: .expectedActualValueTo("be an error"))
+        }
+        var allEqualityChecksAreTrue = true
+        if let domain = domain {
+            let result = try domain.satisfies(Expression(expression: {( actualNSError.domain )} , location: actualNSErrorExpression.location))
+            allEqualityChecksAreTrue = allEqualityChecksAreTrue && result.toBoolean(expectation: .toMatch)
+            if !result.toBoolean(expectation: .toMatch) {
+                message = message.appended(message: " in domain \(result.message.expectedMessage), got <\(actualNSError.domain)>")
+            }
+        }
+        if let code = code {
+            let result = try code.satisfies(Expression(expression: {( actualNSError.code )} , location: actualNSErrorExpression.location))
+            allEqualityChecksAreTrue = allEqualityChecksAreTrue && result.toBoolean(expectation: .toMatch)
+            if !result.toBoolean(expectation: .toMatch) {
+                message = message.appended(message: " in code \(result.message.expectedMessage), got <\(actualNSError.code)>")
+            }
+
+        }
+        if let localizedDescription = localizedDescription {
+            let result = try localizedDescription.satisfies(Expression(expression: {( actualNSError.localizedDescription )} , location: actualNSErrorExpression.location))
+            allEqualityChecksAreTrue = allEqualityChecksAreTrue && result.toBoolean(expectation: .toMatch)
+            if !result.toBoolean(expectation: .toMatch) {
+                message = message.appended(message: " localizedDescription \(result.message.expectedMessage), got <\(actualNSError.localizedDescription)>")
+            }
+
+        }
+        return allEqualityChecksAreTrue ?
+        PredicateResult(status: .matches, message: message.appended(message: ", got <nil>").appendedBeNilHint()) :
+        PredicateResult(status: .doesNotMatch, message: message)
+    })
+}
+
 // MARK: Private
 
 private func beAnErrorMatcherFunc(domain: MatcherClosure<String>? = nil, code: MatcherClosure<Int>? = nil, localizedDescription: MatcherClosure<String>? = nil) -> NonNilMatcherFunc<NSError> {

@@ -33,15 +33,22 @@ import Result
 //}
 
 public func haveFailed<T, U>() -> Predicate<Result<T, U>> {
-    return Predicate.define("have failed", matcher: { (actualResultExpression, msg) -> PredicateResult in
+    return Predicate.defineNilable("have failed", matcher: { (actualResultExpression, msg) -> PredicateResult in
+        do {
         guard let actualExpression = try actualResultExpression.evaluate() else {
-            return PredicateResult(status: .fail, message: msg)
+            return PredicateResult(status: .fail, message: msg.appendedBeNilHint())
         }
         return actualExpression.analysis(ifSuccess: { _ in
             return PredicateResult(status: .doesNotMatch, message: msg)
         }, ifFailure: { _  in
             return PredicateResult(status: .matches, message: msg)
         })
+        } catch let error {
+            if type(of: error) == U.self {
+                return PredicateResult(status: .matches, message: .expectedCustomValueTo("have failed", "<\(String(describing:error))>"))
+            }
+            return PredicateResult(status: .doesNotMatch, message: .expectedCustomValueTo("have failed", "<\(String(describing:error))>"))
+        }
     })
 }
 
