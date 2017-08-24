@@ -25,5 +25,11 @@ DerivedData
 #
 # Pods/
 
+# carthage
+Carthage/
+
+# SPM
+.build/
+
 # Mac OS X
 .DS_Store
