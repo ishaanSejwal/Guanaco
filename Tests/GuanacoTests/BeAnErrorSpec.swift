@@ -40,7 +40,7 @@ class BeAnErrorSpec: QuickSpec {
                     let message = assertionMessage {
                         expect(actual).to(beAnError(domain: contain("ini.bot"), code: beLessThan(89017)))
                     }
-                    expect(message).to(match("expected to be less than <89017>, got"))
+                    expect(message).to(match("expected to have error code be less than <89017>, got"))
                                     }
                 it("fails for mismatching error domain, code and description") {
                     let message = assertionMessage {

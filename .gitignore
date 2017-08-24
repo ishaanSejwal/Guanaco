@@ -33,6 +33,3 @@ Carthage/
 
 # Mac OS X
 .DS_Store
-
-#SPM
-.build/
