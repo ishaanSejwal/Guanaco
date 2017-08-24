@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A60D2C241F4E7E3A00EA3D23 /* BeAnErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D2C221F4E7D6E00EA3D23 /* BeAnErrorSpec.swift */; };
+		A60D2C251F4E7E3C00EA3D23 /* BeAnErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D2C221F4E7D6E00EA3D23 /* BeAnErrorSpec.swift */; };
 		BEE591BE1ADDE5CD00534F14 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE591BD1ADDE5CD00534F14 /* Result.framework */; };
 		BEE591C01ADE05C200534F14 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE591BD1ADDE5CD00534F14 /* Result.framework */; };
 		DA5023941A969B0B004175D7 /* HaveSucceeded.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5023931A969B0B004175D7 /* HaveSucceeded.swift */; };
@@ -53,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A60D2C221F4E7D6E00EA3D23 /* BeAnErrorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeAnErrorSpec.swift; sourceTree = "<group>"; };
 		BEE591BD1ADDE5CD00534F14 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92C095D1DFFB92C00233A4A /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		C92C095F1DFFB92C00233A4A /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -232,6 +235,7 @@
 				DA5914341A944AE100AED74C /* AssertionMessageRecorder.swift */,
 				DA59142E1A94466E00AED74C /* HaveSucceededSpec.swift */,
 				DA5914361A944C4800AED74C /* HaveFailedSpec.swift */,
+				A60D2C221F4E7D6E00EA3D23 /* BeAnErrorSpec.swift */,
 				DACBD3F61A94404800BA07BE /* Supporting Files */,
 			);
 			name = GuanacoTests;
@@ -433,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA59144A1A944CA900AED74C /* AssertionMessageRecorder.swift in Sources */,
+				A60D2C241F4E7E3A00EA3D23 /* BeAnErrorSpec.swift in Sources */,
 				DA59144B1A944CA900AED74C /* HaveFailedSpec.swift in Sources */,
 				DA59144C1A944CA900AED74C /* HaveSucceededSpec.swift in Sources */,
 			);
@@ -454,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA5914351A944AE100AED74C /* AssertionMessageRecorder.swift in Sources */,
+				A60D2C251F4E7E3C00EA3D23 /* BeAnErrorSpec.swift in Sources */,
 				DA5914371A944C4800AED74C /* HaveFailedSpec.swift in Sources */,
 				DA59142F1A94466E00AED74C /* HaveSucceededSpec.swift in Sources */,
 			);
