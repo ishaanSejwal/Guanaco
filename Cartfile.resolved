@@ -1,4 +1,4 @@
-github "ishaanSejwal/Nimble" "c37093f4db57fe20117f55157a0c48ecd352a056"
 github "Quick/Quick" "v1.1.0"
 github "antitypical/Result" "3.2.3"
+github "ishaanSejwal/Nimble" "c37093f4db57fe20117f55157a0c48ecd352a056"
 github "jspahrsummers/xcconfigs" "0.10"

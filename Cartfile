@@ -1,2 +1,2 @@
 github "antitypical/Result" ~> 3.2.0
-git "file:///Users/ishaansejwal/Developer/checkouts/Nimble" "PredicateResultChanges"
+github "ishaanSejwal/Nimble" "PredicateResultChanges"
