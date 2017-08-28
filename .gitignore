@@ -30,6 +30,7 @@ Carthage/
 
 # SPM
 .build/
+Packages/
 
 # Mac OS X
 .DS_Store

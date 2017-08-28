@@ -17,7 +17,9 @@ matrix:
     - xcode_scheme: Guanaco-OSX
       env: JOB=MACOS
     # macOS SPM
-    - script:
+    - before_install:
+       - swift package edit Nimble --revision c37093f4db57fe20117f55157a0c48ecd352a056
+      script:
         - swift --version
         - swift build
         - SWIFTPM_TEST=YES swift test
@@ -31,6 +33,7 @@ matrix:
       dist: trusty
       before_install:
         - eval "$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)"
+        - swift package edit Nimble --revision c37093f4db57fe20117f55157a0c48ecd352a056
       script:
         - swift --version
         - swift build

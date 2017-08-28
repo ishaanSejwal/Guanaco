@@ -12,7 +12,7 @@ let package = Package(
     dependencies: {
         var deps: [Package.Dependency] = [
             .Package(url: "https://github.com/antitypical/Result.git", Version(3,2,3)),
-            .Package(url: "https://github.com/Quick/Nimble.git", Version(7,0,1)),
+            .Package(url: "https://github.com/ishaanSejwal/Nimble.git", Version(7,0,1)),
         ]
         if isSwiftPackagerManagerTest {
             deps += [
