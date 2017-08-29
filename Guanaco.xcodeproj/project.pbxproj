@@ -7,868 +7,653 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		OBJ_100 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* DSL.swift */; };
-		OBJ_101 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Expectation.swift */; };
-		OBJ_102 /* ExpectationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* ExpectationMessage.swift */; };
-		OBJ_103 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Expression.swift */; };
-		OBJ_104 /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* FailureMessage.swift */; };
-		OBJ_105 /* AdapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* AdapterProtocols.swift */; };
-		OBJ_106 /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* AssertionDispatcher.swift */; };
-		OBJ_107 /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* AssertionRecorder.swift */; };
-		OBJ_108 /* NimbleEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* NimbleEnvironment.swift */; };
-		OBJ_109 /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* NimbleXCTestHandler.swift */; };
-		OBJ_110 /* NMBExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* NMBExpectation.swift */; };
-		OBJ_111 /* NMBObjCMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* NMBObjCMatcher.swift */; };
-		OBJ_112 /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* AllPass.swift */; };
-		OBJ_113 /* AsyncMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* AsyncMatcherWrapper.swift */; };
-		OBJ_114 /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* BeAKindOf.swift */; };
-		OBJ_115 /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* BeAnInstanceOf.swift */; };
-		OBJ_116 /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* BeCloseTo.swift */; };
-		OBJ_117 /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* BeEmpty.swift */; };
-		OBJ_118 /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* BeginWith.swift */; };
-		OBJ_119 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* BeGreaterThan.swift */; };
-		OBJ_120 /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* BeGreaterThanOrEqualTo.swift */; };
-		OBJ_121 /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* BeIdenticalTo.swift */; };
-		OBJ_122 /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* BeLessThan.swift */; };
-		OBJ_123 /* BeLessThanOrEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* BeLessThanOrEqual.swift */; };
-		OBJ_124 /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* BeLogical.swift */; };
-		OBJ_125 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* BeNil.swift */; };
-		OBJ_126 /* BeVoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* BeVoid.swift */; };
-		OBJ_127 /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Contain.swift */; };
-		OBJ_128 /* ContainElementSatisfying.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* ContainElementSatisfying.swift */; };
-		OBJ_129 /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* EndWith.swift */; };
-		OBJ_130 /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* Equal.swift */; };
-		OBJ_131 /* HaveCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* HaveCount.swift */; };
-		OBJ_132 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* Match.swift */; };
-		OBJ_133 /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* MatcherFunc.swift */; };
-		OBJ_134 /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* MatcherProtocols.swift */; };
-		OBJ_135 /* MatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* MatchError.swift */; };
-		OBJ_136 /* PostNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* PostNotification.swift */; };
-		OBJ_137 /* Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* Predicate.swift */; };
-		OBJ_138 /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* RaisesException.swift */; };
-		OBJ_139 /* SatisfyAnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* SatisfyAnyOf.swift */; };
-		OBJ_140 /* ThrowAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* ThrowAssertion.swift */; };
-		OBJ_141 /* ThrowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* ThrowError.swift */; };
-		OBJ_142 /* ToSucceed.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* ToSucceed.swift */; };
-		OBJ_143 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* Async.swift */; };
-		OBJ_144 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* Errors.swift */; };
-		OBJ_145 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* Functional.swift */; };
-		OBJ_146 /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* SourceLocation.swift */; };
-		OBJ_147 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* Stringers.swift */; };
-		OBJ_148 /* ExceptionCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* ExceptionCapture.swift */; };
-		OBJ_155 /* BeAnError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* BeAnError.swift */; };
-		OBJ_156 /* HaveFailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* HaveFailed.swift */; };
-		OBJ_157 /* HaveSucceeded.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* HaveSucceeded.swift */; };
-		OBJ_158 /* MatcherClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* MatcherClosure.swift */; };
-		OBJ_160 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* Result.framework */; };
-		OBJ_161 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* Nimble.framework */; };
-		OBJ_169 /* AssertionMessageRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* AssertionMessageRecorder.swift */; };
-		OBJ_170 /* BeAnErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* BeAnErrorSpec.swift */; };
-		OBJ_171 /* HaveFailedSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* HaveFailedSpec.swift */; };
-		OBJ_172 /* HaveSucceededSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* HaveSucceededSpec.swift */; };
-		OBJ_174 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* Result.framework */; };
-		OBJ_175 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* Nimble.framework */; };
-		OBJ_176 /* Guanaco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* Guanaco.framework */; };
-		OBJ_91 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* Result.swift */; };
-		OBJ_92 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* ResultProtocol.swift */; };
-		OBJ_99 /* DSL+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* DSL+Wait.swift */; };
+		A60D2C241F4E7E3A00EA3D23 /* BeAnErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D2C221F4E7D6E00EA3D23 /* BeAnErrorSpec.swift */; };
+		A60D2C251F4E7E3C00EA3D23 /* BeAnErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D2C221F4E7D6E00EA3D23 /* BeAnErrorSpec.swift */; };
+		BEE591BE1ADDE5CD00534F14 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE591BD1ADDE5CD00534F14 /* Result.framework */; };
+		BEE591C01ADE05C200534F14 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE591BD1ADDE5CD00534F14 /* Result.framework */; };
+		DA5023941A969B0B004175D7 /* HaveSucceeded.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5023931A969B0B004175D7 /* HaveSucceeded.swift */; };
+		DA5023951A969B0B004175D7 /* HaveSucceeded.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5023931A969B0B004175D7 /* HaveSucceeded.swift */; };
+		DA5023971A969B9E004175D7 /* HaveFailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5023961A969B9E004175D7 /* HaveFailed.swift */; };
+		DA5023981A969B9E004175D7 /* HaveFailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5023961A969B9E004175D7 /* HaveFailed.swift */; };
+		DA59142F1A94466E00AED74C /* HaveSucceededSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA59142E1A94466E00AED74C /* HaveSucceededSpec.swift */; };
+		DA5914311A94469500AED74C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5914301A94469500AED74C /* Quick.framework */; };
+		DA5914331A94469900AED74C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACBD4041A94417200BA07BE /* Nimble.framework */; };
+		DA5914351A944AE100AED74C /* AssertionMessageRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5914341A944AE100AED74C /* AssertionMessageRecorder.swift */; };
+		DA5914371A944C4800AED74C /* HaveFailedSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5914361A944C4800AED74C /* HaveFailedSpec.swift */; };
+		DA59143F1A944C9B00AED74C /* Guanaco.h in Headers */ = {isa = PBXBuildFile; fileRef = DACBD3EB1A94404800BA07BE /* Guanaco.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA59144A1A944CA900AED74C /* AssertionMessageRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5914341A944AE100AED74C /* AssertionMessageRecorder.swift */; };
+		DA59144B1A944CA900AED74C /* HaveFailedSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5914361A944C4800AED74C /* HaveFailedSpec.swift */; };
+		DA59144C1A944CA900AED74C /* HaveSucceededSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA59142E1A94466E00AED74C /* HaveSucceededSpec.swift */; };
+		DA5914621A944EDC00AED74C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACBD4041A94417200BA07BE /* Nimble.framework */; };
+		DA5914691A94509900AED74C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5914301A94469500AED74C /* Quick.framework */; };
+		DA59146A1A94509C00AED74C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACBD4041A94417200BA07BE /* Nimble.framework */; };
+		DA59146B1A9450A100AED74C /* Guanaco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5914441A944C9B00AED74C /* Guanaco.framework */; };
+		DACBD3EC1A94404800BA07BE /* Guanaco.h in Headers */ = {isa = PBXBuildFile; fileRef = DACBD3EB1A94404800BA07BE /* Guanaco.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DACBD3F21A94404800BA07BE /* Guanaco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACBD3E61A94404800BA07BE /* Guanaco.framework */; };
+		DACBD4051A94417200BA07BE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACBD4041A94417200BA07BE /* Nimble.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		DAE3CA231A96F80600CAD15A /* MatcherClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3CA221A96F80600CAD15A /* MatcherClosure.swift */; };
+		DAE3CA241A96F80600CAD15A /* MatcherClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3CA221A96F80600CAD15A /* MatcherClosure.swift */; };
+		DAE3CA261A96FC5200CAD15A /* BeAnError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3CA251A96FC5200CAD15A /* BeAnError.swift */; };
+		DAE3CA271A96FC5200CAD15A /* BeAnError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3CA251A96FC5200CAD15A /* BeAnError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A60D2C2B1F54506D00EA3D23 /* PBXContainerItemProxy */ = {
+		DA5914661A94500500AED74C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
+			containerPortal = DACBD3DD1A94404800BA07BE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_86;
-			remoteInfo = Result;
+			remoteGlobalIDString = DA5914381A944C9B00AED74C;
+			remoteInfo = "Guanaco-OSX";
 		};
-		A60D2C2C1F54506D00EA3D23 /* PBXContainerItemProxy */ = {
+		DACBD3F31A94404800BA07BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
+			containerPortal = DACBD3DD1A94404800BA07BE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_94;
-			remoteInfo = Nimble;
-		};
-		A60D2C2D1F54506D00EA3D23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_86;
-			remoteInfo = Result;
-		};
-		A60D2C2E1F54506D00EA3D23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_94;
-			remoteInfo = Nimble;
-		};
-		A60D2C2F1F54506D00EA3D23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_150;
+			remoteGlobalIDString = DACBD3E51A94404800BA07BE;
 			remoteInfo = Guanaco;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		OBJ_10 /* HaveSucceeded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveSucceeded.swift; sourceTree = "<group>"; };
-		OBJ_11 /* MatcherClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatcherClosure.swift; sourceTree = "<group>"; };
-		OBJ_14 /* AssertionMessageRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertionMessageRecorder.swift; sourceTree = "<group>"; };
-		OBJ_15 /* BeAnErrorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeAnErrorSpec.swift; sourceTree = "<group>"; };
-		OBJ_16 /* HaveFailedSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveFailedSpec.swift; sourceTree = "<group>"; };
-		OBJ_17 /* HaveSucceededSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveSucceededSpec.swift; sourceTree = "<group>"; };
-		OBJ_23 /* DSL+Wait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DSL+Wait.swift"; sourceTree = "<group>"; };
-		OBJ_24 /* DSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSL.swift; sourceTree = "<group>"; };
-		OBJ_25 /* Expectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
-		OBJ_26 /* ExpectationMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpectationMessage.swift; sourceTree = "<group>"; };
-		OBJ_27 /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
-		OBJ_28 /* FailureMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureMessage.swift; sourceTree = "<group>"; };
-		OBJ_30 /* AdapterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterProtocols.swift; sourceTree = "<group>"; };
-		OBJ_31 /* AssertionDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertionDispatcher.swift; sourceTree = "<group>"; };
-		OBJ_32 /* AssertionRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertionRecorder.swift; sourceTree = "<group>"; };
-		OBJ_33 /* NimbleEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleEnvironment.swift; sourceTree = "<group>"; };
-		OBJ_34 /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleXCTestHandler.swift; sourceTree = "<group>"; };
-		OBJ_35 /* NMBExpectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMBExpectation.swift; sourceTree = "<group>"; };
-		OBJ_36 /* NMBObjCMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMBObjCMatcher.swift; sourceTree = "<group>"; };
-		OBJ_38 /* ExceptionCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionCapture.swift; sourceTree = "<group>"; };
-		OBJ_40 /* AllPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPass.swift; sourceTree = "<group>"; };
-		OBJ_41 /* AsyncMatcherWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncMatcherWrapper.swift; sourceTree = "<group>"; };
-		OBJ_42 /* BeAKindOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeAKindOf.swift; sourceTree = "<group>"; };
-		OBJ_43 /* BeAnInstanceOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeAnInstanceOf.swift; sourceTree = "<group>"; };
-		OBJ_44 /* BeCloseTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeCloseTo.swift; sourceTree = "<group>"; };
-		OBJ_45 /* BeEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeEmpty.swift; sourceTree = "<group>"; };
-		OBJ_46 /* BeginWith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginWith.swift; sourceTree = "<group>"; };
-		OBJ_47 /* BeGreaterThan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeGreaterThan.swift; sourceTree = "<group>"; };
-		OBJ_48 /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
-		OBJ_49 /* BeIdenticalTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeIdenticalTo.swift; sourceTree = "<group>"; };
-		OBJ_50 /* BeLessThan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeLessThan.swift; sourceTree = "<group>"; };
-		OBJ_51 /* BeLessThanOrEqual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeLessThanOrEqual.swift; sourceTree = "<group>"; };
-		OBJ_52 /* BeLogical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeLogical.swift; sourceTree = "<group>"; };
-		OBJ_53 /* BeNil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeNil.swift; sourceTree = "<group>"; };
-		OBJ_54 /* BeVoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeVoid.swift; sourceTree = "<group>"; };
-		OBJ_55 /* Contain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contain.swift; sourceTree = "<group>"; };
-		OBJ_56 /* ContainElementSatisfying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainElementSatisfying.swift; sourceTree = "<group>"; };
-		OBJ_57 /* EndWith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndWith.swift; sourceTree = "<group>"; };
-		OBJ_58 /* Equal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equal.swift; sourceTree = "<group>"; };
-		OBJ_59 /* HaveCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveCount.swift; sourceTree = "<group>"; };
-		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_60 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
-		OBJ_61 /* MatcherFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatcherFunc.swift; sourceTree = "<group>"; };
-		OBJ_62 /* MatcherProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatcherProtocols.swift; sourceTree = "<group>"; };
-		OBJ_63 /* MatchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchError.swift; sourceTree = "<group>"; };
-		OBJ_64 /* PostNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNotification.swift; sourceTree = "<group>"; };
-		OBJ_65 /* Predicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predicate.swift; sourceTree = "<group>"; };
-		OBJ_66 /* RaisesException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisesException.swift; sourceTree = "<group>"; };
-		OBJ_67 /* SatisfyAnyOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatisfyAnyOf.swift; sourceTree = "<group>"; };
-		OBJ_68 /* ThrowAssertion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowAssertion.swift; sourceTree = "<group>"; };
-		OBJ_69 /* ThrowError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowError.swift; sourceTree = "<group>"; };
-		OBJ_70 /* ToSucceed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToSucceed.swift; sourceTree = "<group>"; };
-		OBJ_72 /* Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
-		OBJ_73 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
-		OBJ_74 /* Functional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functional.swift; sourceTree = "<group>"; };
-		OBJ_75 /* SourceLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLocation.swift; sourceTree = "<group>"; };
-		OBJ_76 /* Stringers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stringers.swift; sourceTree = "<group>"; };
-		OBJ_79 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		OBJ_8 /* BeAnError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeAnError.swift; sourceTree = "<group>"; };
-		OBJ_80 /* ResultProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultProtocol.swift; sourceTree = "<group>"; };
-		OBJ_82 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_83 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_84 /* Guanaco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Guanaco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_85 /* GuanacoTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = GuanacoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_9 /* HaveFailed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveFailed.swift; sourceTree = "<group>"; };
+		A60D2C221F4E7D6E00EA3D23 /* BeAnErrorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeAnErrorSpec.swift; sourceTree = "<group>"; };
+		BEE591BD1ADDE5CD00534F14 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92C095D1DFFB92C00233A4A /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		C92C095F1DFFB92C00233A4A /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		C92C09661DFFB92C00233A4A /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		C92C09681DFFB92C00233A4A /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		C92C096B1DFFB92C00233A4A /* Mac-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
+		C92C096E1DFFB92C00233A4A /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
+		C92C09721DFFB92C00233A4A /* tvOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-Application.xcconfig"; sourceTree = "<group>"; };
+		C92C09741DFFB92C00233A4A /* tvOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		DA5023931A969B0B004175D7 /* HaveSucceeded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaveSucceeded.swift; sourceTree = "<group>"; };
+		DA5023961A969B9E004175D7 /* HaveFailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaveFailed.swift; sourceTree = "<group>"; };
+		DA59142E1A94466E00AED74C /* HaveSucceededSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaveSucceededSpec.swift; sourceTree = "<group>"; };
+		DA5914301A94469500AED74C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5914341A944AE100AED74C /* AssertionMessageRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssertionMessageRecorder.swift; sourceTree = "<group>"; };
+		DA5914361A944C4800AED74C /* HaveFailedSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaveFailedSpec.swift; sourceTree = "<group>"; };
+		DA5914441A944C9B00AED74C /* Guanaco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Guanaco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5914551A944CA900AED74C /* GuanacoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuanacoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DACBD3E61A94404800BA07BE /* Guanaco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Guanaco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DACBD3EA1A94404800BA07BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DACBD3EB1A94404800BA07BE /* Guanaco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Guanaco.h; sourceTree = "<group>"; };
+		DACBD3F11A94404800BA07BE /* GuanacoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuanacoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DACBD3F71A94404800BA07BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DACBD4041A94417200BA07BE /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE3CA221A96F80600CAD15A /* MatcherClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatcherClosure.swift; sourceTree = "<group>"; };
+		DAE3CA251A96FC5200CAD15A /* BeAnError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeAnError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_149 /* Frameworks */ = {
+		DA59143B1A944C9B00AED74C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
+			buildActionMask = 2147483647;
 			files = (
+				BEE591BE1ADDE5CD00534F14 /* Result.framework in Frameworks */,
+				DA5914621A944EDC00AED74C /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_159 /* Frameworks */ = {
+		DA59144D1A944CA900AED74C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
+			buildActionMask = 2147483647;
 			files = (
-				OBJ_160 /* Result.framework in Frameworks */,
-				OBJ_161 /* Nimble.framework in Frameworks */,
+				DA59146B1A9450A100AED74C /* Guanaco.framework in Frameworks */,
+				DA59146A1A94509C00AED74C /* Nimble.framework in Frameworks */,
+				DA5914691A94509900AED74C /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_173 /* Frameworks */ = {
+		DACBD3E21A94404800BA07BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
+			buildActionMask = 2147483647;
 			files = (
-				OBJ_174 /* Result.framework in Frameworks */,
-				OBJ_175 /* Nimble.framework in Frameworks */,
-				OBJ_176 /* Guanaco.framework in Frameworks */,
+				BEE591C01ADE05C200534F14 /* Result.framework in Frameworks */,
+				DACBD4051A94417200BA07BE /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_93 /* Frameworks */ = {
+		DACBD3EE1A94404800BA07BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
+			buildActionMask = 2147483647;
 			files = (
+				DA5914331A94469900AED74C /* Nimble.framework in Frameworks */,
+				DA5914311A94469500AED74C /* Quick.framework in Frameworks */,
+				DACBD3F21A94404800BA07BE /* Guanaco.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_12 /* Tests */ = {
+		C92C09581DFFB92C00233A4A /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_13 /* GuanacoTests */,
+				C92C095A1DFFB92C00233A4A /* Base */,
+				C92C09651DFFB92C00233A4A /* iOS */,
+				C92C096A1DFFB92C00233A4A /* macOS */,
+				C92C09711DFFB92C00233A4A /* tvOS */,
 			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
+			name = Configurations;
+			path = Carthage/Checkouts/xcconfigs;
+			sourceTree = "<group>";
 		};
-		OBJ_13 /* GuanacoTests */ = {
+		C92C095A1DFFB92C00233A4A /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_14 /* AssertionMessageRecorder.swift */,
-				OBJ_15 /* BeAnErrorSpec.swift */,
-				OBJ_16 /* HaveFailedSpec.swift */,
-				OBJ_17 /* HaveSucceededSpec.swift */,
+				C92C095D1DFFB92C00233A4A /* Debug.xcconfig */,
+				C92C095F1DFFB92C00233A4A /* Release.xcconfig */,
+			);
+			name = Base;
+			path = Base/Configurations;
+			sourceTree = "<group>";
+		};
+		C92C09651DFFB92C00233A4A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C92C09661DFFB92C00233A4A /* iOS-Application.xcconfig */,
+				C92C09681DFFB92C00233A4A /* iOS-Framework.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		C92C096A1DFFB92C00233A4A /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				C92C096B1DFFB92C00233A4A /* Mac-Application.xcconfig */,
+				C92C096E1DFFB92C00233A4A /* Mac-Framework.xcconfig */,
+			);
+			name = macOS;
+			path = "Mac OS X";
+			sourceTree = "<group>";
+		};
+		C92C09711DFFB92C00233A4A /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				C92C09721DFFB92C00233A4A /* tvOS-Application.xcconfig */,
+				C92C09741DFFB92C00233A4A /* tvOS-Framework.xcconfig */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		C9D6DA5D1DF81E3B00E65759 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DACBD4041A94417200BA07BE /* Nimble.framework */,
+				DA5914301A94469500AED74C /* Quick.framework */,
+				BEE591BD1ADDE5CD00534F14 /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DACBD3DC1A94404800BA07BE = {
+			isa = PBXGroup;
+			children = (
+				DACBD3E81A94404800BA07BE /* Guanaco */,
+				DACBD3F51A94404800BA07BE /* GuanacoTests */,
+				C92C09581DFFB92C00233A4A /* Configurations */,
+				C9D6DA5D1DF81E3B00E65759 /* Frameworks */,
+				DACBD3E71A94404800BA07BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DACBD3E71A94404800BA07BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DACBD3E61A94404800BA07BE /* Guanaco.framework */,
+				DACBD3F11A94404800BA07BE /* GuanacoTests.xctest */,
+				DA5914441A944C9B00AED74C /* Guanaco.framework */,
+				DA5914551A944CA900AED74C /* GuanacoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DACBD3E81A94404800BA07BE /* Guanaco */ = {
+			isa = PBXGroup;
+			children = (
+				DACBD3EB1A94404800BA07BE /* Guanaco.h */,
+				DAE3CA221A96F80600CAD15A /* MatcherClosure.swift */,
+				DA5023931A969B0B004175D7 /* HaveSucceeded.swift */,
+				DA5023961A969B9E004175D7 /* HaveFailed.swift */,
+				DAE3CA251A96FC5200CAD15A /* BeAnError.swift */,
+				DACBD3E91A94404800BA07BE /* Supporting Files */,
+			);
+			name = Guanaco;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DACBD3E91A94404800BA07BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DACBD3EA1A94404800BA07BE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DACBD3F51A94404800BA07BE /* GuanacoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA5914341A944AE100AED74C /* AssertionMessageRecorder.swift */,
+				DA59142E1A94466E00AED74C /* HaveSucceededSpec.swift */,
+				DA5914361A944C4800AED74C /* HaveFailedSpec.swift */,
+				A60D2C221F4E7D6E00EA3D23 /* BeAnErrorSpec.swift */,
+				DACBD3F61A94404800BA07BE /* Supporting Files */,
 			);
 			name = GuanacoTests;
 			path = Tests/GuanacoTests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_20 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_21 /* Nimble */,
-				OBJ_77 /* Result 3.2.3 */,
-			);
-			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		OBJ_21 /* Nimble */ = {
+		DACBD3F61A94404800BA07BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_22 /* Nimble */,
+				DACBD3F71A94404800BA07BE /* Info.plist */,
 			);
-			name = Nimble;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_22 /* Nimble */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_23 /* DSL+Wait.swift */,
-				OBJ_24 /* DSL.swift */,
-				OBJ_25 /* Expectation.swift */,
-				OBJ_26 /* ExpectationMessage.swift */,
-				OBJ_27 /* Expression.swift */,
-				OBJ_28 /* FailureMessage.swift */,
-				OBJ_29 /* Adapters */,
-				OBJ_39 /* Matchers */,
-				OBJ_71 /* Utils */,
-			);
-			name = Nimble;
-			path = Packages/Nimble/Sources/Nimble;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_29 /* Adapters */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_30 /* AdapterProtocols.swift */,
-				OBJ_31 /* AssertionDispatcher.swift */,
-				OBJ_32 /* AssertionRecorder.swift */,
-				OBJ_33 /* NimbleEnvironment.swift */,
-				OBJ_34 /* NimbleXCTestHandler.swift */,
-				OBJ_35 /* NMBExpectation.swift */,
-				OBJ_36 /* NMBObjCMatcher.swift */,
-				OBJ_37 /* NonObjectiveC */,
-			);
-			path = Adapters;
+			name = "Supporting Files";
 			sourceTree = "<group>";
-		};
-		OBJ_37 /* NonObjectiveC */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_38 /* ExceptionCapture.swift */,
-			);
-			path = NonObjectiveC;
-			sourceTree = "<group>";
-		};
-		OBJ_39 /* Matchers */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_40 /* AllPass.swift */,
-				OBJ_41 /* AsyncMatcherWrapper.swift */,
-				OBJ_42 /* BeAKindOf.swift */,
-				OBJ_43 /* BeAnInstanceOf.swift */,
-				OBJ_44 /* BeCloseTo.swift */,
-				OBJ_45 /* BeEmpty.swift */,
-				OBJ_46 /* BeginWith.swift */,
-				OBJ_47 /* BeGreaterThan.swift */,
-				OBJ_48 /* BeGreaterThanOrEqualTo.swift */,
-				OBJ_49 /* BeIdenticalTo.swift */,
-				OBJ_50 /* BeLessThan.swift */,
-				OBJ_51 /* BeLessThanOrEqual.swift */,
-				OBJ_52 /* BeLogical.swift */,
-				OBJ_53 /* BeNil.swift */,
-				OBJ_54 /* BeVoid.swift */,
-				OBJ_55 /* Contain.swift */,
-				OBJ_56 /* ContainElementSatisfying.swift */,
-				OBJ_57 /* EndWith.swift */,
-				OBJ_58 /* Equal.swift */,
-				OBJ_59 /* HaveCount.swift */,
-				OBJ_60 /* Match.swift */,
-				OBJ_61 /* MatcherFunc.swift */,
-				OBJ_62 /* MatcherProtocols.swift */,
-				OBJ_63 /* MatchError.swift */,
-				OBJ_64 /* PostNotification.swift */,
-				OBJ_65 /* Predicate.swift */,
-				OBJ_66 /* RaisesException.swift */,
-				OBJ_67 /* SatisfyAnyOf.swift */,
-				OBJ_68 /* ThrowAssertion.swift */,
-				OBJ_69 /* ThrowError.swift */,
-				OBJ_70 /* ToSucceed.swift */,
-			);
-			path = Matchers;
-			sourceTree = "<group>";
-		};
-		OBJ_5 /*  */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_7 /* Sources */,
-				OBJ_12 /* Tests */,
-				OBJ_20 /* Dependencies */,
-				OBJ_6 /* Package.swift */,
-				OBJ_81 /* Products */,
-			);
-			name = "";
-			sourceTree = "<group>";
-		};
-		OBJ_7 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_8 /* BeAnError.swift */,
-				OBJ_9 /* HaveFailed.swift */,
-				OBJ_10 /* HaveSucceeded.swift */,
-				OBJ_11 /* MatcherClosure.swift */,
-			);
-			path = Sources;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_71 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_72 /* Async.swift */,
-				OBJ_73 /* Errors.swift */,
-				OBJ_74 /* Functional.swift */,
-				OBJ_75 /* SourceLocation.swift */,
-				OBJ_76 /* Stringers.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		OBJ_77 /* Result 3.2.3 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_78 /* Result */,
-			);
-			name = "Result 3.2.3";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_78 /* Result */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_79 /* Result.swift */,
-				OBJ_80 /* ResultProtocol.swift */,
-			);
-			name = Result;
-			path = ".build/checkouts/Result.git-8684547452332391156/Result";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_81 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_82 /* Result.framework */,
-				OBJ_83 /* Nimble.framework */,
-				OBJ_84 /* Guanaco.framework */,
-				OBJ_85 /* GuanacoTests.xctest */,
-			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		DA59143E1A944C9B00AED74C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA59143F1A944C9B00AED74C /* Guanaco.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACBD3E31A94404800BA07BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACBD3EC1A94404800BA07BE /* Guanaco.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		OBJ_150 /* Guanaco */ = {
+		DA5914381A944C9B00AED74C /* Guanaco-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_151 /* Build configuration list for PBXNativeTarget "Guanaco" */;
+			buildConfigurationList = DA5914411A944C9B00AED74C /* Build configuration list for PBXNativeTarget "Guanaco-OSX" */;
 			buildPhases = (
-				OBJ_154 /* Sources */,
-				OBJ_159 /* Frameworks */,
+				DA5914391A944C9B00AED74C /* Sources */,
+				DA59143B1A944C9B00AED74C /* Frameworks */,
+				DA59143E1A944C9B00AED74C /* Headers */,
+				DA5914401A944C9B00AED74C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_162 /* PBXTargetDependency */,
-				OBJ_163 /* PBXTargetDependency */,
 			);
-			name = Guanaco;
+			name = "Guanaco-OSX";
 			productName = Guanaco;
-			productReference = OBJ_84 /* Guanaco.framework */;
+			productReference = DA5914441A944C9B00AED74C /* Guanaco.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_164 /* GuanacoTests */ = {
+		DA5914461A944CA900AED74C /* GuanacoTests-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_165 /* Build configuration list for PBXNativeTarget "GuanacoTests" */;
+			buildConfigurationList = DA5914521A944CA900AED74C /* Build configuration list for PBXNativeTarget "GuanacoTests-OSX" */;
 			buildPhases = (
-				OBJ_168 /* Sources */,
-				OBJ_173 /* Frameworks */,
+				DA5914491A944CA900AED74C /* Sources */,
+				DA59144D1A944CA900AED74C /* Frameworks */,
+				DA5914511A944CA900AED74C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_177 /* PBXTargetDependency */,
-				OBJ_178 /* PBXTargetDependency */,
-				OBJ_179 /* PBXTargetDependency */,
+				DA5914671A94500500AED74C /* PBXTargetDependency */,
 			);
-			name = GuanacoTests;
+			name = "GuanacoTests-OSX";
 			productName = GuanacoTests;
-			productReference = OBJ_85 /* GuanacoTests.xctest */;
+			productReference = DA5914551A944CA900AED74C /* GuanacoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		OBJ_86 /* Result */ = {
+		DACBD3E51A94404800BA07BE /* Guanaco-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_87 /* Build configuration list for PBXNativeTarget "Result" */;
+			buildConfigurationList = DACBD3FC1A94404800BA07BE /* Build configuration list for PBXNativeTarget "Guanaco-iOS" */;
 			buildPhases = (
-				OBJ_90 /* Sources */,
-				OBJ_93 /* Frameworks */,
+				DACBD3E11A94404800BA07BE /* Sources */,
+				DACBD3E21A94404800BA07BE /* Frameworks */,
+				DACBD3E31A94404800BA07BE /* Headers */,
+				DACBD3E41A94404800BA07BE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Result;
-			productName = Result;
-			productReference = OBJ_82 /* Result.framework */;
+			name = "Guanaco-iOS";
+			productName = Guanaco;
+			productReference = DACBD3E61A94404800BA07BE /* Guanaco.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_94 /* Nimble */ = {
+		DACBD3F01A94404800BA07BE /* GuanacoTests-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_95 /* Build configuration list for PBXNativeTarget "Nimble" */;
+			buildConfigurationList = DACBD3FF1A94404800BA07BE /* Build configuration list for PBXNativeTarget "GuanacoTests-iOS" */;
 			buildPhases = (
-				OBJ_98 /* Sources */,
-				OBJ_149 /* Frameworks */,
+				DACBD3ED1A94404800BA07BE /* Sources */,
+				DACBD3EE1A94404800BA07BE /* Frameworks */,
+				DACBD3EF1A94404800BA07BE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DACBD3F41A94404800BA07BE /* PBXTargetDependency */,
 			);
-			name = Nimble;
-			productName = Nimble;
-			productReference = OBJ_83 /* Nimble.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "GuanacoTests-iOS";
+			productName = GuanacoTests;
+			productReference = DACBD3F11A94404800BA07BE /* GuanacoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		OBJ_1 /* Project object */ = {
+		DACBD3DD1A94404800BA07BE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 9999;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0810;
+				TargetAttributes = {
+					DA5914381A944C9B00AED74C = {
+						LastSwiftMigration = 0810;
+					};
+					DA5914461A944CA900AED74C = {
+						LastSwiftMigration = 0810;
+					};
+					DACBD3E51A94404800BA07BE = {
+						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0810;
+					};
+					DACBD3F01A94404800BA07BE = {
+						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0810;
+					};
+				};
 			};
-			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Guanaco" */;
+			buildConfigurationList = DACBD3E01A94404800BA07BE /* Build configuration list for PBXProject "Guanaco" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_81 /* Products */;
+			mainGroup = DACBD3DC1A94404800BA07BE;
+			productRefGroup = DACBD3E71A94404800BA07BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				OBJ_86 /* Result */,
-				OBJ_94 /* Nimble */,
-				OBJ_150 /* Guanaco */,
-				OBJ_164 /* GuanacoTests */,
+				DACBD3E51A94404800BA07BE /* Guanaco-iOS */,
+				DACBD3F01A94404800BA07BE /* GuanacoTests-iOS */,
+				DA5914381A944C9B00AED74C /* Guanaco-OSX */,
+				DA5914461A944CA900AED74C /* GuanacoTests-OSX */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		DA5914401A944C9B00AED74C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA5914511A944CA900AED74C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACBD3E41A94404800BA07BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACBD3EF1A94404800BA07BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_154 /* Sources */ = {
+		DA5914391A944C9B00AED74C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
+			buildActionMask = 2147483647;
 			files = (
-				OBJ_155 /* BeAnError.swift in Sources */,
-				OBJ_156 /* HaveFailed.swift in Sources */,
-				OBJ_157 /* HaveSucceeded.swift in Sources */,
-				OBJ_158 /* MatcherClosure.swift in Sources */,
+				DAE3CA241A96F80600CAD15A /* MatcherClosure.swift in Sources */,
+				DA5023981A969B9E004175D7 /* HaveFailed.swift in Sources */,
+				DAE3CA271A96FC5200CAD15A /* BeAnError.swift in Sources */,
+				DA5023951A969B0B004175D7 /* HaveSucceeded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_168 /* Sources */ = {
+		DA5914491A944CA900AED74C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
+			buildActionMask = 2147483647;
 			files = (
-				OBJ_169 /* AssertionMessageRecorder.swift in Sources */,
-				OBJ_170 /* BeAnErrorSpec.swift in Sources */,
-				OBJ_171 /* HaveFailedSpec.swift in Sources */,
-				OBJ_172 /* HaveSucceededSpec.swift in Sources */,
+				DA59144A1A944CA900AED74C /* AssertionMessageRecorder.swift in Sources */,
+				A60D2C241F4E7E3A00EA3D23 /* BeAnErrorSpec.swift in Sources */,
+				DA59144B1A944CA900AED74C /* HaveFailedSpec.swift in Sources */,
+				DA59144C1A944CA900AED74C /* HaveSucceededSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_90 /* Sources */ = {
+		DACBD3E11A94404800BA07BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
+			buildActionMask = 2147483647;
 			files = (
-				OBJ_91 /* Result.swift in Sources */,
-				OBJ_92 /* ResultProtocol.swift in Sources */,
+				DAE3CA231A96F80600CAD15A /* MatcherClosure.swift in Sources */,
+				DA5023971A969B9E004175D7 /* HaveFailed.swift in Sources */,
+				DAE3CA261A96FC5200CAD15A /* BeAnError.swift in Sources */,
+				DA5023941A969B0B004175D7 /* HaveSucceeded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_98 /* Sources */ = {
+		DACBD3ED1A94404800BA07BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
+			buildActionMask = 2147483647;
 			files = (
-				OBJ_99 /* DSL+Wait.swift in Sources */,
-				OBJ_100 /* DSL.swift in Sources */,
-				OBJ_101 /* Expectation.swift in Sources */,
-				OBJ_102 /* ExpectationMessage.swift in Sources */,
-				OBJ_103 /* Expression.swift in Sources */,
-				OBJ_104 /* FailureMessage.swift in Sources */,
-				OBJ_105 /* AdapterProtocols.swift in Sources */,
-				OBJ_106 /* AssertionDispatcher.swift in Sources */,
-				OBJ_107 /* AssertionRecorder.swift in Sources */,
-				OBJ_108 /* NimbleEnvironment.swift in Sources */,
-				OBJ_109 /* NimbleXCTestHandler.swift in Sources */,
-				OBJ_110 /* NMBExpectation.swift in Sources */,
-				OBJ_111 /* NMBObjCMatcher.swift in Sources */,
-				OBJ_112 /* AllPass.swift in Sources */,
-				OBJ_113 /* AsyncMatcherWrapper.swift in Sources */,
-				OBJ_114 /* BeAKindOf.swift in Sources */,
-				OBJ_115 /* BeAnInstanceOf.swift in Sources */,
-				OBJ_116 /* BeCloseTo.swift in Sources */,
-				OBJ_117 /* BeEmpty.swift in Sources */,
-				OBJ_118 /* BeginWith.swift in Sources */,
-				OBJ_119 /* BeGreaterThan.swift in Sources */,
-				OBJ_120 /* BeGreaterThanOrEqualTo.swift in Sources */,
-				OBJ_121 /* BeIdenticalTo.swift in Sources */,
-				OBJ_122 /* BeLessThan.swift in Sources */,
-				OBJ_123 /* BeLessThanOrEqual.swift in Sources */,
-				OBJ_124 /* BeLogical.swift in Sources */,
-				OBJ_125 /* BeNil.swift in Sources */,
-				OBJ_126 /* BeVoid.swift in Sources */,
-				OBJ_127 /* Contain.swift in Sources */,
-				OBJ_128 /* ContainElementSatisfying.swift in Sources */,
-				OBJ_129 /* EndWith.swift in Sources */,
-				OBJ_130 /* Equal.swift in Sources */,
-				OBJ_131 /* HaveCount.swift in Sources */,
-				OBJ_132 /* Match.swift in Sources */,
-				OBJ_133 /* MatcherFunc.swift in Sources */,
-				OBJ_134 /* MatcherProtocols.swift in Sources */,
-				OBJ_135 /* MatchError.swift in Sources */,
-				OBJ_136 /* PostNotification.swift in Sources */,
-				OBJ_137 /* Predicate.swift in Sources */,
-				OBJ_138 /* RaisesException.swift in Sources */,
-				OBJ_139 /* SatisfyAnyOf.swift in Sources */,
-				OBJ_140 /* ThrowAssertion.swift in Sources */,
-				OBJ_141 /* ThrowError.swift in Sources */,
-				OBJ_142 /* ToSucceed.swift in Sources */,
-				OBJ_143 /* Async.swift in Sources */,
-				OBJ_144 /* Errors.swift in Sources */,
-				OBJ_145 /* Functional.swift in Sources */,
-				OBJ_146 /* SourceLocation.swift in Sources */,
-				OBJ_147 /* Stringers.swift in Sources */,
-				OBJ_148 /* ExceptionCapture.swift in Sources */,
+				DA5914351A944AE100AED74C /* AssertionMessageRecorder.swift in Sources */,
+				A60D2C251F4E7E3C00EA3D23 /* BeAnErrorSpec.swift in Sources */,
+				DA5914371A944C4800AED74C /* HaveFailedSpec.swift in Sources */,
+				DA59142F1A94466E00AED74C /* HaveSucceededSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_162 /* PBXTargetDependency */ = {
+		DA5914671A94500500AED74C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_86 /* Result */;
-			targetProxy = A60D2C2B1F54506D00EA3D23 /* PBXContainerItemProxy */;
+			target = DA5914381A944C9B00AED74C /* Guanaco-OSX */;
+			targetProxy = DA5914661A94500500AED74C /* PBXContainerItemProxy */;
 		};
-		OBJ_163 /* PBXTargetDependency */ = {
+		DACBD3F41A94404800BA07BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_94 /* Nimble */;
-			targetProxy = A60D2C2C1F54506D00EA3D23 /* PBXContainerItemProxy */;
-		};
-		OBJ_177 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = OBJ_86 /* Result */;
-			targetProxy = A60D2C2D1F54506D00EA3D23 /* PBXContainerItemProxy */;
-		};
-		OBJ_178 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = OBJ_94 /* Nimble */;
-			targetProxy = A60D2C2E1F54506D00EA3D23 /* PBXContainerItemProxy */;
-		};
-		OBJ_179 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = OBJ_150 /* Guanaco */;
-			targetProxy = A60D2C2F1F54506D00EA3D23 /* PBXContainerItemProxy */;
+			target = DACBD3E51A94404800BA07BE /* Guanaco-iOS */;
+			targetProxy = DACBD3F31A94404800BA07BE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_152 /* Debug */ = {
+		DA5914421A944C9B00AED74C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92C096E1DFFB92C00233A4A /* Mac-Framework.xcconfig */;
 			buildSettings = {
-				ENABLE_TESTABILITY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Guanaco.xcodeproj/Guanaco_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Guanaco;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = Guanaco;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.modocache.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = Guanaco;
 			};
 			name = Debug;
 		};
-		OBJ_153 /* Release */ = {
+		DA5914431A944C9B00AED74C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92C096E1DFFB92C00233A4A /* Mac-Framework.xcconfig */;
 			buildSettings = {
-				ENABLE_TESTABILITY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Guanaco.xcodeproj/Guanaco_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Guanaco;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = Guanaco;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.modocache.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = Guanaco;
 			};
 			name = Release;
 		};
-		OBJ_166 /* Debug */ = {
+		DA5914531A944CA900AED74C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92C096B1DFFB92C00233A4A /* Mac-Application.xcconfig */;
 			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Guanaco.xcodeproj/GuanacoTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				TARGET_NAME = GuanacoTests;
+				INFOPLIST_FILE = Tests/GuanacoTests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.modocache.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = GuanacoTests;
 			};
 			name = Debug;
 		};
-		OBJ_167 /* Release */ = {
+		DA5914541A944CA900AED74C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92C096B1DFFB92C00233A4A /* Mac-Application.xcconfig */;
 			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Guanaco.xcodeproj/GuanacoTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				TARGET_NAME = GuanacoTests;
+				INFOPLIST_FILE = Tests/GuanacoTests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.modocache.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = GuanacoTests;
 			};
 			name = Release;
 		};
-		OBJ_3 /* Debug */ = {
+		DACBD3FA1A94404800BA07BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92C095D1DFFB92C00233A4A /* Debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SWIFT_VERSION = 3.0;
-				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
-		OBJ_4 /* Release */ = {
+		DACBD3FB1A94404800BA07BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92C095F1DFFB92C00233A4A /* Release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_OPTIMIZATION_LEVEL = s;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SWIFT_VERSION = 3.0;
-				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
-		OBJ_88 /* Debug */ = {
+		DACBD3FD1A94404800BA07BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92C09681DFFB92C00233A4A /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				ENABLE_TESTABILITY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Guanaco.xcodeproj/Result_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Result;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = Result;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.modocache.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = Guanaco;
 			};
 			name = Debug;
 		};
-		OBJ_89 /* Release */ = {
+		DACBD3FE1A94404800BA07BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92C09681DFFB92C00233A4A /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				ENABLE_TESTABILITY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Guanaco.xcodeproj/Result_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Result;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = Result;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.modocache.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = Guanaco;
 			};
 			name = Release;
 		};
-		OBJ_96 /* Debug */ = {
+		DACBD4001A94404800BA07BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92C09661DFFB92C00233A4A /* iOS-Application.xcconfig */;
 			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Guanaco.xcodeproj/Nimble_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Nimble;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = Nimble;
+				INFOPLIST_FILE = Tests/GuanacoTests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.modocache.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = GuanacoTests;
 			};
 			name = Debug;
 		};
-		OBJ_97 /* Release */ = {
+		DACBD4011A94404800BA07BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92C09661DFFB92C00233A4A /* iOS-Application.xcconfig */;
 			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Guanaco.xcodeproj/Nimble_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Nimble;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = Nimble;
+				INFOPLIST_FILE = Tests/GuanacoTests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.modocache.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = GuanacoTests;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_151 /* Build configuration list for PBXNativeTarget "Guanaco" */ = {
+		DA5914411A944C9B00AED74C /* Build configuration list for PBXNativeTarget "Guanaco-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_152 /* Debug */,
-				OBJ_153 /* Release */,
+				DA5914421A944C9B00AED74C /* Debug */,
+				DA5914431A944C9B00AED74C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		OBJ_165 /* Build configuration list for PBXNativeTarget "GuanacoTests" */ = {
+		DA5914521A944CA900AED74C /* Build configuration list for PBXNativeTarget "GuanacoTests-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_166 /* Debug */,
-				OBJ_167 /* Release */,
+				DA5914531A944CA900AED74C /* Debug */,
+				DA5914541A944CA900AED74C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		OBJ_2 /* Build configuration list for PBXProject "Guanaco" */ = {
+		DACBD3E01A94404800BA07BE /* Build configuration list for PBXProject "Guanaco" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_3 /* Debug */,
-				OBJ_4 /* Release */,
+				DACBD3FA1A94404800BA07BE /* Debug */,
+				DACBD3FB1A94404800BA07BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		OBJ_87 /* Build configuration list for PBXNativeTarget "Result" */ = {
+		DACBD3FC1A94404800BA07BE /* Build configuration list for PBXNativeTarget "Guanaco-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_88 /* Debug */,
-				OBJ_89 /* Release */,
+				DACBD3FD1A94404800BA07BE /* Debug */,
+				DACBD3FE1A94404800BA07BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		OBJ_95 /* Build configuration list for PBXNativeTarget "Nimble" */ = {
+		DACBD3FF1A94404800BA07BE /* Build configuration list for PBXNativeTarget "GuanacoTests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_96 /* Debug */,
-				OBJ_97 /* Release */,
+				DACBD4001A94404800BA07BE /* Debug */,
+				DACBD4011A94404800BA07BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = OBJ_1 /* Project object */;
+	rootObject = DACBD3DD1A94404800BA07BE /* Project object */;
 }

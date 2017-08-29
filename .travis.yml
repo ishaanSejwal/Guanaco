@@ -9,8 +9,7 @@ matrix:
     - xcode_scheme: Guanaco-iOS
       xcode_sdk: iphonesimulator
       before_script:
-        - destination_id="platform=iOS Simulator,name=iPhone 6s"
-        - echo "destination is $destination_id"
+        - destination_id='platform=iOS Simulator,name=iPhone 6s'
       env: 
         - JOB=IOS
     # macOS
@@ -19,7 +18,7 @@ matrix:
     # macOS SPM
     - script:
         - swift --version
-        - swift package edit Nimble --revision c37093f4db57fe20117f55157a0c48ecd352a056
+        - swift package edit Nimble --revision c37093f4db57fe20117f55157a0c48ecd352a056 /*commit that makes PredicateResult Public*/
         - SWIFTPM_TEST=YES swift test
       git:
         submodules: false
@@ -33,12 +32,18 @@ matrix:
         - eval "$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)"
       script:
         - swift --version
-        - swift package edit Nimble --revision c37093f4db57fe20117f55157a0c48ecd352a056
+        - swift package edit Nimble --revision c37093f4db57fe20117f55157a0c48ecd352a056 /*commit that makes PredicateResult Public*/
         - SWIFTPM_TEST=YES swift test
       git:
         submodules: false
       env: JOB=SWIFTPM_LINUX
 
 script:
-  - echo "xcodebuild -workspace "$TRAVIS_XCODE_WORKSPACE" -scheme "$TRAVIS_XCODE_SCHEME"${XCODE_SDK+ -sdk $XCODE_SDK}${destination_id+ -destination \"id=$destination_id\"} test"
-  - $(!!)
+  - set -o xtrace
+  - xcodebuild \
+    -workspace "$TRAVIS_XCODE_WORKSPACE" \
+    -scheme "$TRAVIS_XCODE_SCHEME" \
+    ${TRAVIS_XCODE_SDK+-sdk $TRAVIS_XCODE_SDK }\
+    ${destination_id+-destination "$destination_id" }\
+    test
+  - set +o xtrace
