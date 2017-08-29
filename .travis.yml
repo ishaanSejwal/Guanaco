@@ -18,7 +18,7 @@ matrix:
     # macOS SPM
     - script:
         - swift --version
-        - swift package edit Nimble --revision c37093f4db57fe20117f55157a0c48ecd352a056 /*commit that makes PredicateResult Public*/
+        - swift package edit Nimble --revision c37093f4db57fe20117f55157a0c48ecd352a056
         - SWIFTPM_TEST=YES swift test
       git:
         submodules: false
@@ -32,7 +32,7 @@ matrix:
         - eval "$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)"
       script:
         - swift --version
-        - swift package edit Nimble --revision c37093f4db57fe20117f55157a0c48ecd352a056 /*commit that makes PredicateResult Public*/
+        - swift package edit Nimble --revision c37093f4db57fe20117f55157a0c48ecd352a056
         - SWIFTPM_TEST=YES swift test
       git:
         submodules: false
@@ -40,10 +40,5 @@ matrix:
 
 script:
   - set -o xtrace
-  - xcodebuild \
-    -workspace "$TRAVIS_XCODE_WORKSPACE" \
-    -scheme "$TRAVIS_XCODE_SCHEME" \
-    ${TRAVIS_XCODE_SDK+-sdk $TRAVIS_XCODE_SDK }\
-    ${destination_id+-destination "$destination_id" }\
-    test
+  - xcodebuild -workspace "$TRAVIS_XCODE_WORKSPACE" -scheme "$TRAVIS_XCODE_SCHEME" ${TRAVIS_XCODE_SDK+-sdk $TRAVIS_XCODE_SDK }${destination_id+-destination "$destination_id" }test
   - set +o xtrace
